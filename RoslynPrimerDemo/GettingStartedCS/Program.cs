@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+
 /// <summary>
 /// This example is from the Roslyn Wiki
 /// https://github.com/dotnet/roslyn/wiki/Getting-Started-C%23-Syntax-Analysis

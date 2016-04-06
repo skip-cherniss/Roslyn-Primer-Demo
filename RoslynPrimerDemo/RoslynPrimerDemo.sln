@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStartedCS", "GettingStartedCS\GettingStartedCS.csproj", "{44604F8D-D891-4364-A288-B1B7F62FFBE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCollectorCS", "UsingCollectorCS\UsingCollectorCS.csproj", "{5DFA1759-EC6C-47A9-9628-B79B3801C035}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,10 @@ Global
 		{44604F8D-D891-4364-A288-B1B7F62FFBE2}.Debug|x86.Build.0 = Debug|x86
 		{44604F8D-D891-4364-A288-B1B7F62FFBE2}.Release|x86.ActiveCfg = Release|x86
 		{44604F8D-D891-4364-A288-B1B7F62FFBE2}.Release|x86.Build.0 = Release|x86
+		{5DFA1759-EC6C-47A9-9628-B79B3801C035}.Debug|x86.ActiveCfg = Debug|x86
+		{5DFA1759-EC6C-47A9-9628-B79B3801C035}.Debug|x86.Build.0 = Debug|x86
+		{5DFA1759-EC6C-47A9-9628-B79B3801C035}.Release|x86.ActiveCfg = Release|x86
+		{5DFA1759-EC6C-47A9-9628-B79B3801C035}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

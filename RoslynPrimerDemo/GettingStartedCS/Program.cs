@@ -90,7 +90,33 @@ namespace HelloWorld
 
             var argIdentifierTypeName = argsParameter.Identifier.GetType().Name;
 
+            // Query Methods
+            // In addition to traversing trees using the properties of the SyntaxNode 
+            // derived classes you can also explore the syntax tree using the query methods 
+            // defined on SyntaxNode. These methods should be immediately familiar to anyone 
+            // familiar with XPath.You can use these methods with LINQ to quickly find 
+            // things in a tree.
 
+            //  Using IntelliSense, examine the members of the SyntaxNode class through the root variable.
+            // Note query methods such as DescendantNodes, AncestorsAndSelf, and ChildNodes.
+
+            // root.DescendantNodes()
+            // root.AncestorsAndSelf()
+            // root.ChildNodes()
+
+            var firstParameters = 
+                from methodDeclaration in root.DescendantNodes()
+                    .OfType<MethodDeclarationSyntax>()
+                where methodDeclaration.Identifier.ValueText == "Main"
+                select methodDeclaration.ParameterList.Parameters.First();
+
+            var argsParameter2 = firstParameters.Single();
+
+            // Using the Immediate window, type the expression 
+            // argsParameter == argsParameter2 
+            // and press enter to evaluate it.
+
+            // Note that the LINQ expression found the same parameter as manually navigating the tree.
         }
     }
 }
